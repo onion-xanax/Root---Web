@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Web</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#" class="logo" id="main-logo">Root Web</a>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link" data-section="osint">OSINT</a></li>
+                    <li><a href="#" class="nav-link" data-section="tool">Tool</a></li>
+                    <li><a href="#" class="nav-link" data-section="forum">Forum</a></li>
+                    <li><a href="#" class="nav-link" data-section="market">Market</a></li>
+                    <li><a href="#" class="nav-link" data-section="pentest">Pentest</a></li>
+                    <li><a href="#" class="nav-link" data-section="rootgo">RootGo</a></li>
+                    <li><a href="#" class="nav-link" data-section="ai">AI</a></li>
+                    <li><a href="#" class="nav-link" data-section="software">SoftWare</a></li>
+                </ul>
+            </nav>
+            <div class="auth-section">
+                <div class="auth-buttons" id="auth-buttons">
+                    <button class="auth-btn register-btn" id="register-btn">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Регистрация</span>
+                    </button>
+                    <button class="auth-btn login-btn" id="login-btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Войти</span>
+                    </button>
+                </div>
+                <div class="profile-container" id="profile-container" style="display: none;">
+                    <button class="profile-btn" id="profile-btn">
+                        <img src="" alt="Аватар" class="profile-avatar-small" id="profile-avatar-small">
+                        <span class="profile-name" id="profile-name"></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-dropdown" id="profile-dropdown">
+                        <a href="#" class="dropdown-item" id="edit-profile-menu-btn">
+                            <i class="fas fa-user-edit"></i> Редактировать профиль
+                        </a>
+                        <a href="#" class="dropdown-item" id="change-password-menu-btn">
+                            <i class="fas fa-key"></i> Сменить пароль
+                        </a>
+                        <a href="#" class="dropdown-item" id="change-avatar-menu-btn">
+                            <i class="fas fa-camera"></i> Сменить аватар
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item logout-item" id="logout-btn">
+                            <i class="fas fa-sign-out-alt"></i> Выйти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="video-section">
+            <div class="video-container">
+                <video class="site-video" id="main-video" autoplay muted loop playsinline>
+                    <source src="photo/1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="description-container">
+                <div class="description-header">
+                    <h2><span class="highlight">Root Web</span> - Профессиональная платформа кибербезопасности</h2>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">5.0/5.0</span>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h3>Максимальная безопасность</h3>
+                        <p>Передовые алгоритмы шифрования, многофакторная аутентификация и защита от DDoS-атак.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-network-wired feature-icon"></i>
+                        <h3>Распределенная сеть</h3>
+                        <p>Глобальная инфраструктура с узлами в 15 странах для гарантированной доступности.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-tools feature-icon"></i>
+                        <h3>Профессиональные инструменты</h3>
+                        <p>Более 200 специализированных инструментов для анализа, тестирования и мониторинга.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h3>Экспертное сообщество</h3>
+                        <p>Более 50,000 профессионалов в области кибербезопасности и цифровой разведки.</p>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <h3><i class="fas fa-microchip"></i> Технические характеристики</h3>
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Шифрование:</span>
+                            <span class="spec-value">AES-256, RSA-4096</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Сеть:</span>
+                            <span class="spec-value">Tor, I2P, VPN-туннели</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Протоколы:</span>
+                            <span class="spec-value">HTTPS/2, SSH, WireGuard</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Хранилище:</span>
+                            <span class="spec-value">Распределенное, 99.9% uptime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="register-modal">
+        <div class="register-modal">
+            <div class="register-modal-header">
+                <h2><i class="fas fa-user-plus"></i> Создание аккаунта</h2>
+                <button class="close-modal-btn" id="close-register-btn">&times;</button>
+            </div>
+
+            <div class="register-modal-body">
+                <div class="register-step active" id="step-1">
+                    <div class="avatar-upload-section">
+                        <div class="avatar-preview" id="avatar-preview">
+                            <i class="fas fa-user-circle default-avatar"></i>
+                            <img src="" alt="Аватар" id="avatar-preview-img" style="display: none;">
+                        </div>
+                        <input type="file" id="avatar-input" accept=".jpg,.jpeg,.png" style="display: none;">
+                        <button class="avatar-upload-btn" id="avatar-upload-btn">
+                            <i class="fas fa-camera"></i> Загрузить аватар
+                        </button>
+                        <p class="avatar-hint">JPG или PNG, макс. 2MB</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-username">
+                            <i class="fas fa-user-tag"></i> Никнейм
+                        </label>
+                        <input type="text" id="register-username" class="form-input"
+                               placeholder="Введите уникальный никнейм" maxlength="32">
+                        <div class="input-hint" id="username-hint"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" id="register-email" class="form-input"
+                               placeholder="example@domain.com" required>
+                        <div class="input-hint" id="email-hint"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-password">
+                            <i class="fas fa-lock"></i> Пароль
+                        </label>
+                        <input type="password" id="register-password" class="form-input"
+                               placeholder="Минимум 6 символов" minlength="6">
+                        <div class="input-hint" id="password-hint"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-confirm-password">
+                            <i class="fas fa-lock"></i> Подтвердите пароль
+                        </label>
+                        <input type="password" id="register-confirm-password" class="form-input"
+                               placeholder="Повторите пароль">
+                        <div class="input-hint" id="confirm-password-hint"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-id-card"></i> User ID
+                        </label>
+                        <div class="user-id-display">
+                            <span id="generated-id">00000001</span>
+                        </div>
+                        <div class="input-hint">8-значный уникальный идентификатор</div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="form-btn next-btn" id="next-step-1">
+                            <i class="fas fa-arrow-right"></i> Продолжить
+                        </button>
+                    </div>
+                </div>
+
+                <div class="register-step" id="step-2">
+                    <div class="verification-section">
+                        <div class="verification-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Подтверждение Email</h3>
+                        <p class="verification-text">
+                            На почту <span id="verification-email"></span> отправлен 6-значный код подтверждения
+                        </p>
+
+                        <div class="verification-code-input">
+                            <input type="text" maxlength="1" class="code-digit" data-index="0">
+                            <input type="text" maxlength="1" class="code-digit" data-index="1">
+                            <input type="text" maxlength="1" class="code-digit" data-index="2">
+                            <input type="text" maxlength="1" class="code-digit" data-index="3">
+                            <input type="text" maxlength="1" class="code-digit" data-index="4">
+                            <input type="text" maxlength="1" class="code-digit" data-index="5">
+                        </div>
+
+                        <div class="verification-timer">
+                            <i class="fas fa-clock"></i>
+                            <span id="timer">60</span> сек
+                        </div>
+
+                        <button class="resend-code-btn" id="resend-code-btn" disabled>
+                            <i class="fas fa-redo"></i> Отправить код повторно
+                        </button>
+
+                        <div class="verification-status" id="verification-status"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="form-btn back-btn" id="back-step-2">
+                            <i class="fas fa-arrow-left"></i> Назад
+                        </button>
+                        <button class="form-btn verify-btn" id="verify-code-btn" disabled>
+                            <i class="fas fa-check"></i> Подтвердить
+                        </button>
+                    </div>
+                </div>
+
+                <div class="register-step" id="step-3">
+                    <div class="loading-section">
+                        <div class="loading-spinner-large"></div>
+                        <h3>Создание аккаунта...</h3>
+                        <p id="loading-text">Сохранение данных в Telegram</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-modal-footer">
+                <div class="step-indicator">
+                    <span class="step-dot active" data-step="1"></span>
+                    <span class="step-dot" data-step="2"></span>
+                    <span class="step-dot" data-step="3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="login-modal">
+        <div class="login-modal">
+            <div class="login-modal-header">
+                <h2><i class="fas fa-sign-in-alt"></i> Вход в аккаунт</h2>
+                <button class="close-modal-btn" id="close-login-btn">&times;</button>
+            </div>
+
+            <div class="login-modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" id="login-email" class="form-input"
+                               placeholder="Введите ваш email" required>
+                        <div class="input-hint" id="login-email-hint"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">
+                            <i class="fas fa-lock"></i> Пароль
+                        </label>
+                        <input type="password" id="login-password" class="form-input"
+                               placeholder="Введите ваш пароль" required>
+                        <div class="input-hint" id="login-password-hint"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="form-btn login-submit-btn" id="login-submit-btn">
+                            <i class="fas fa-sign-in-alt"></i> Войти
+                        </button>
+                    </div>
+
+                    <div class="login-links">
+                        <a href="#" class="forgot-password-link" id="forgot-password-btn">
+                            <i class="fas fa-key"></i> Забыли пароль?
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="edit-profile-modal">
+        <div class="edit-profile-modal">
+            <div class="edit-profile-modal-header">
+                <h2><i class="fas fa-edit"></i> Редактирование профиля</h2>
+                <button class="close-modal-btn" id="close-edit-profile-btn">&times;</button>
+            </div>
+
+            <div class="edit-profile-modal-body">
+                <div class="edit-avatar-section">
+                    <div class="edit-avatar-preview" id="edit-avatar-preview">
+                        <img src="" alt="Аватар" id="edit-avatar-preview-img">
+                    </div>
+                    <input type="file" id="edit-avatar-input" accept=".jpg,.jpeg,.png" style="display: none;">
+                    <button class="edit-avatar-upload-btn" id="edit-avatar-upload-btn">
+                        <i class="fas fa-camera"></i> Сменить аватар
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-username">
+                        <i class="fas fa-user-tag"></i> Никнейм
+                    </label>
+                    <input type="text" id="edit-username" class="form-input"
+                           placeholder="Введите новый никнейм" maxlength="32">
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-email">
+                        <i class="fas fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="edit-email" class="form-input"
+                           placeholder="Введите новый email" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-bio">
+                        <i class="fas fa-info-circle"></i> О себе
+                    </label>
+                    <textarea id="edit-bio" class="form-textarea"
+                              placeholder="Расскажите о себе" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-telegram">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </label>
+                    <input type="text" id="edit-telegram" class="form-input"
+                           placeholder="@username">
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-website">
+                        <i class="fas fa-globe"></i> Вебсайт
+                    </label>
+                    <input type="url" id="edit-website" class="form-input"
+                           placeholder="https://example.com">
+                </div>
+
+                <div class="form-actions">
+                    <button class="form-btn cancel-btn" id="cancel-edit-profile-btn">
+                        <i class="fas fa-times"></i> Отмена
+                    </button>
+                    <button class="form-btn save-btn" id="save-profile-btn">
+                        <i class="fas fa-save"></i> Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="change-password-modal">
+        <div class="change-password-modal">
+            <div class="change-password-modal-header">
+                <h2><i class="fas fa-key"></i> Смена пароля</h2>
+                <button class="close-modal-btn" id="close-change-password-btn">&times;</button>
+            </div>
+
+            <div class="change-password-modal-body">
+                <div class="form-group">
+                    <label for="current-password">
+                        <i class="fas fa-lock"></i> Текущий пароль
+                    </label>
+                    <input type="password" id="current-password" class="form-input"
+                           placeholder="Введите текущий пароль" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-password">
+                        <i class="fas fa-lock"></i> Новый пароль
+                    </label>
+                    <input type="password" id="new-password" class="form-input"
+                           placeholder="Минимум 6 символов" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-new-password">
+                        <i class="fas fa-lock"></i> Подтвердите новый пароль
+                    </label>
+                    <input type="password" id="confirm-new-password" class="form-input"
+                           placeholder="Повторите новый пароль" required>
+                </div>
+
+                <div class="form-actions">
+                    <button class="form-btn cancel-btn" id="cancel-change-password-btn">
+                        <i class="fas fa-times"></i> Отмена
+                    </button>
+                    <button class="form-btn save-btn" id="save-password-btn">
+                        <i class="fas fa-save"></i> Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-overlay" id="profile-overlay">
+        <div class="profile-modal" id="profile-modal">
+            <div class="profile-header">
+                <div class="profile-avatar-container">
+                    <img src="" alt="Avatar" class="profile-avatar" id="profile-avatar">
+                    <div class="profile-online-status"></div>
+                </div>
+                <button class="close-profile-btn" id="close-profile-btn">&times;</button>
+            </div>
+
+            <div class="profile-info">
+                <div class="profile-info-item">
+                    <span class="profile-label"><i class="fas fa-user-tag"></i> Никнейм:</span>
+                    <span class="profile-value" id="profile-username"></span>
+                </div>
+                <div class="profile-info-item">
+                    <span class="profile-label"><i class="fas fa-envelope"></i> Email:</span>
+                    <span class="profile-value" id="profile-email"></span>
+                </div>
+                <div class="profile-info-item">
+                    <span class="profile-label"><i class="fas fa-id-card"></i> ID:</span>
+                    <span class="profile-value" id="profile-id"></span>
+                </div>
+                <div class="profile-info-item">
+                    <span class="profile-label"><i class="fas fa-calendar-alt"></i> Дата регистрации:</span>
+                    <span class="profile-value" id="profile-reg-date"></span>
+                </div>
+                <div class="profile-info-item full-width" id="profile-bio-container">
+                    <span class="profile-label"><i class="fas fa-info-circle"></i> О себе:</span>
+                    <span class="profile-value" id="profile-bio">Не указано</span>
+                </div>
+                <div class="profile-info-item" id="profile-telegram-container">
+                    <span class="profile-label"><i class="fab fa-telegram"></i> Telegram:</span>
+                    <span class="profile-value" id="profile-telegram">Не указан</span>
+                </div>
+                <div class="profile-info-item" id="profile-website-container">
+                    <span class="profile-label"><i class="fas fa-globe"></i> Вебсайт:</span>
+                    <span class="profile-value" id="profile-website">Не указан</span>
+                </div>
+                <div class="profile-info-item full-width">
+                    <span class="profile-label"><i class="fas fa-shield-alt"></i> Уровень доступа:</span>
+                    <span class="profile-value badge premium" id="profile-access-level">PREMIUM</span>
+                </div>
+            </div>
+
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span class="stat-label">Последний вход</span>
+                    <span class="stat-value" id="last-login-time"></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-hdd"></i>
+                    <span class="stat-label">Хранилище</span>
+                    <span class="stat-value">15.2/100 GB</span>
+                </div>
+            </div>
+
+            <div class="profile-actions">
+                <button class="profile-action-btn" id="open-edit-profile-btn">
+                    <i class="fas fa-edit"></i> Редактировать
+                </button>
+                <button class="profile-action-btn" id="open-change-password-btn">
+                    <i class="fas fa-key"></i> Сменить пароль
+                </button>
+                <button class="profile-action-btn logout-btn" id="profile-logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Выйти
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="device-check-overlay" id="device-check">
+        <div class="device-check-modal">
+            <i class="fas fa-laptop device-icon"></i>
+            <h2>Доступ ограничен</h2>
+            <p>Для доступа к Root Web рекомендуется использовать компьютер или ноутбук.</p>
+            <p>Если вы используете ноутбук, нажмите кнопку ниже:</p>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button class="retry-btn" onclick="window.location.reload()">
+                    <i class="fas fa-sync-alt"></i> Проверить снова
+                </button>
+                <button class="retry-btn" style="background: linear-gradient(90deg, #4CAF50, #45a049);"
+                        onclick="bypassDeviceCheck()">
+                    <i class="fas fa-laptop"></i> Я использую ноутбук
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="web.js"></script>
+</body>
+</html>

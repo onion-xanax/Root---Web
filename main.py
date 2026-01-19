@@ -25,7 +25,30 @@ OSINT_API_URL = "https://leakosintapi.com/"
 OSINT_API_TOKEN = "5221650154:D9g4M7Ti"
 
 EMAIL_ACCOUNTS = {
-    'alenaveterov@gmail.com': 'hmiq xwmr yfmw prsa'
+    'linadurov@gmail.com': 'gsbp xyts brbu dlpw',
+    'Sckykatwo@gmail.com': 'dblx ajll ugku ogpx',
+    'xxhowsq@gmail.com': 'fcmm adeq oato gjon',
+    'Vanakrotisov@gmail.com': 'gukl qhxy uxea yhil',
+    'ofag59111@gmail.com': 'xmnx ijya yxvr wamo',
+    'vasyapetkin132@gmail.com': 'bflk peqq sorn gfsp',
+    'annnoraleidingbr57@gmail.com': 'desnidcbrzkekuby',
+    'dlyabravla655@gmail.com': 'kprn ihvr bgia vdys',
+    'dlatt6677@gmail.com': 'usun ruef otzx zcrh',
+    'qstkennethadams388@gmail.com': 'itpz jkrh mtwp escx',
+    'usppaullewis171@gmail.com': 'lpiy xqwi apmc xzmv',
+    'ftkgeorgeanderson367@gmail.com': 'okut ecjk hstl nucy',
+    'nieedwardbrown533@gmail.com': 'wvig utku ovjk appd',
+    'h56400139@gmail.com': 'byrl egno xguy ksvf',
+    'den.kotelnikov220@gmail.com': 'xprw tftm lldy ranp',
+    'trevorzxasuniga214@gmail.com': 'egnr eucw jvxg jatq',
+    'dellapreston50@gmail.com': 'qoit huon rzsd eewo',
+    'neilfdhioley765@gmail.com': 'rgco uwiy qrdc gvqh',
+    'hhzcharlesbaker201@gmail.com': 'mcxq vzgm quxy smhh',
+    'samuelmnjassey32@gmail.com': 'lgct cjiw nufr zxjg',
+    'allisonikse1922@gmail.com': 'tozo xrzu qndn mwuq',
+    'corysnja1996@gmail.com': 'pfjk ocbf augx cgiy',
+    'maddietrdk1999@gmail.com': 'rhqb ssiz csar cvot',
+    'yaitskaya.alya@mail.ru': 'CeiYHA6GNpvuCz584eCp'
 }
 
 TELEGRAM_BOT_TOKEN = "8313657511:AAGOnWonGZZkblzf5rb-_LOel37WXYJUYp8"
@@ -883,4 +906,5 @@ if __name__ == '__main__':
     print("Ссылка: http://localhost:5000")
     print("=" * 50)
     
+
     app.run(host='0.0.0.0', port=5000, debug=True)
